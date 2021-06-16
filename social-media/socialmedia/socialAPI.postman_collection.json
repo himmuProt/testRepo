@@ -1,0 +1,864 @@
+{
+	"info": {
+		"_postman_id": "11ad7ea9-52ea-4c69-8278-0ddb8bce40c1",
+		"name": "socialAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/user-view-set/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5NjE1LCJqdGkiOiI3MzhjZjZmNWZiNWU0M2QwYjQ3MDg4ZjEzOTZkZWZhOSIsInVzZXJfaWQiOjF9.YFrPRe0L6OpHMNjD7OoAlXWKIWeyQDA-XcKedMz4tjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "any post you want to add",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						""
+					]
+				},
+				"description": "Get User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/user-view-set/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5NjE1LCJqdGkiOiI3MzhjZjZmNWZiNWU0M2QwYjQ3MDg4ZjEzOTZkZWZhOSIsInVzZXJfaWQiOjF9.YFrPRe0L6OpHMNjD7OoAlXWKIWeyQDA-XcKedMz4tjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "any post you want to add",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user-view-set/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user-view-set",
+						""
+					]
+				},
+				"description": "To Signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/posts/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5NjE1LCJqdGkiOiI3MzhjZjZmNWZiNWU0M2QwYjQ3MDg4ZjEzOTZkZWZhOSIsInVzZXJfaWQiOjF9.YFrPRe0L6OpHMNjD7OoAlXWKIWeyQDA-XcKedMz4tjs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "any post you want to add",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						""
+					]
+				},
+				"description": "Get Posts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/posts/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5OTc3LCJqdGkiOiIyZDFkYTkwNGJjNTk0YWM1YWRlZDEwMDRiOGVjMGUxNiIsInVzZXJfaWQiOjN9.3SfSD396yEE2nv-Ftel9zdLjeqA_9tmkhzeu79zVWeM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text"
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						""
+					]
+				},
+				"description": "Create Post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/postlike-view-set/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5OTc3LCJqdGkiOiIyZDFkYTkwNGJjNTk0YWM1YWRlZDEwMDRiOGVjMGUxNiIsInVzZXJfaWQiOjN9.3SfSD396yEE2nv-Ftel9zdLjeqA_9tmkhzeu79zVWeM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text"
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/postlike-view-set/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"postlike-view-set",
+						""
+					]
+				},
+				"description": "Get liked post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/postlike-view-set/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5OTc3LCJqdGkiOiIyZDFkYTkwNGJjNTk0YWM1YWRlZDEwMDRiOGVjMGUxNiIsInVzZXJfaWQiOjN9.3SfSD396yEE2nv-Ftel9zdLjeqA_9tmkhzeu79zVWeM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/postlike-view-set/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"postlike-view-set",
+						""
+					]
+				},
+				"description": "To Like post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/postlike-view-set/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5OTc3LCJqdGkiOiIyZDFkYTkwNGJjNTk0YWM1YWRlZDEwMDRiOGVjMGUxNiIsInVzZXJfaWQiOjN9.3SfSD396yEE2nv-Ftel9zdLjeqA_9tmkhzeu79zVWeM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/postlike-view-set/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"postlike-view-set",
+						"1",
+						""
+					]
+				},
+				"description": "To Unlike Post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/login/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDQwNjU0LCJqdGkiOiJlN2Q3ZWRlNjUyODY0MDQ4OWQ4MzcyMzBiMGVhNjM0YiIsInVzZXJfaWQiOjJ9.jR4Upx1ha-Dgd5ztSu94DL08hFpoxhw37SEzBPnqj2s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "himmu1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				},
+				"description": "To Login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/token/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyNDM5OTc3LCJqdGkiOiIyZDFkYTkwNGJjNTk0YWM1YWRlZDEwMDRiOGVjMGUxNiIsInVzZXJfaWQiOjN9.3SfSD396yEE2nv-Ftel9zdLjeqA_9tmkhzeu79zVWeM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "james",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1111\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "example@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIyMDMxNTQ4LCJqdGkiOiIyNjBkNGZkNGVmYTU0NWQ0YTlhMzkxNmQ5OGU3OTc5YiIsInVzZXJfaWQiOjF9.6L4TM4yslaRohYxS_9jI6YQjpJOOionWPbfkVR0kNkI",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "My First Post",
+							"type": "text"
+						},
+						{
+							"key": "postLikes",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "like_user",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "himanshu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				},
+				"description": "to generate Token"
+			},
+			"response": []
+		}
+	]
+}
